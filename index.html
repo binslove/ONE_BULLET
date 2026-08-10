@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>ONE BULLET — 단 한 발</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root { color-scheme: dark; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body {
+    width: 100%; height: 100%;
+    background: #05080B;
+    overflow: hidden;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+  }
+  body {
+    display: flex; align-items: center; justify-content: center;
+    /* 실험시설 느낌의 미세한 배경 격자 */
+    background-image:
+      linear-gradient(rgba(238,242,243,0.028) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(238,242,243,0.028) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+  #wrap { position: relative; line-height: 0; }
+  canvas#game {
+    display: block;
+    background: #0B0F14;
+    border: 1px solid rgba(238,242,243,0.14);
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.6), 0 24px 80px rgba(0,0,0,0.8);
+    cursor: crosshair;
+    image-rendering: auto;
+  }
+  #hint {
+    position: absolute; left: 0; right: 0; bottom: -26px;
+    text-align: center; font-size: 11px; letter-spacing: 3px;
+    color: rgba(238,242,243,0.28); line-height: 1.4;
+    pointer-events: none; user-select: none;
+  }
+</style>
+</head>
+<body>
+  <div id="wrap">
+    <canvas id="game" width="1280" height="720"></canvas>
+    <div id="hint">ONE BULLET &nbsp;·&nbsp; 2D TOP-DOWN RICOCHET SHOOTING &nbsp;·&nbsp; 화면을 클릭하면 사운드가 활성화됩니다</div>
+  </div>
+
+  <script src="src/util.js"></script>
+  <script src="src/audio.js"></script>
+  <script src="src/levels.js"></script>
+  <script src="src/game.js"></script>
+</body>
+</html>
