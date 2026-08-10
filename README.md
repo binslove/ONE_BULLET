@@ -2,7 +2,8 @@
 
 한 발의 궤적을 설계하고, 되찾고, 이어가는 2D 탑다운 리코셰 슈팅 액션.
 
-**실행**: `index.html` 을 브라우저로 열면 됩니다. (빌드 · 설치 · 서버 불필요)
+**실행**: `docs/index.html` 을 브라우저로 열면 됩니다. (빌드 · 설치 · 서버 불필요)
+**플레이**: https://binslove.github.io/ONE_BULLET/ (GitHub Pages, `docs/` 폴더 배포)
 
 ## 조작
 
